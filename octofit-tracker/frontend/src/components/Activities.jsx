@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { API_ENDPOINTS, fetchData } from '../config/api';
 
+/**
+ * Activities Component
+ * Fetches data from: https://{codespace-name}-8000.app.github.dev/api/activities/
+ * Displays workout activities with duration and calories burned
+ */
 export function Activities() {
   const [activities, setActivities] = useState([]);
   const [loading, setLoading] = useState(true);

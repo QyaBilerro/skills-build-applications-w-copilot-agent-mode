@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { API_ENDPOINTS, fetchData } from '../config/api';
 
+/**
+ * Teams Component
+ * Fetches data from: https://{codespace-name}-8000.app.github.dev/api/teams/
+ * Displays fitness teams with member lists
+ */
 export function Teams() {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);

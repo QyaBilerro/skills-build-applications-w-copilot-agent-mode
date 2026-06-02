@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { API_ENDPOINTS, fetchData } from '../config/api';
 
+/**
+ * Leaderboard Component
+ * Fetches data from: https://{codespace-name}-8000.app.github.dev/api/leaderboard/
+ * Displays competitive rankings with streaks
+ */
 export function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);

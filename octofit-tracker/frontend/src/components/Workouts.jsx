@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { API_ENDPOINTS, fetchData } from '../config/api';
 
+/**
+ * Workouts Component
+ * Fetches data from: https://{codespace-name}-8000.app.github.dev/api/workouts/
+ * Displays structured workout programs
+ */
 export function Workouts() {
   const [workouts, setWorkouts] = useState([]);
   const [loading, setLoading] = useState(true);

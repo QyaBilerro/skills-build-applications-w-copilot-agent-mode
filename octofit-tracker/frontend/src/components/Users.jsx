@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { API_ENDPOINTS, fetchData } from '../config/api';
 
+/**
+ * Users Component
+ * Fetches data from: https://{codespace-name}-8000.app.github.dev/api/users/
+ * Displays user profiles and team assignments
+ */
 export function Users() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
