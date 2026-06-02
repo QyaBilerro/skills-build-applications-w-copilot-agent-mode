@@ -7,6 +7,13 @@
  * The API base URL is constructed as:
  * - Codespaces: https://${VITE_CODESPACE_NAME}-8000.app.github.dev
  * - Local development: http://localhost:8000
+ * 
+ * API Endpoints for Codespaces:
+ * - https://<codespace-name>-8000.app.github.dev/api/users
+ * - https://<codespace-name>-8000.app.github.dev/api/teams
+ * - https://<codespace-name>-8000.app.github.dev/api/activities
+ * - https://<codespace-name>-8000.app.github.dev/api/leaderboard
+ * - https://<codespace-name>-8000.app.github.dev/api/workouts
  */
 
 const CODESPACE_NAME = import.meta.env.VITE_CODESPACE_NAME;
